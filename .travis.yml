@@ -6,3 +6,12 @@ jobs:
     - stage: scan demo.testfire.net
       script:
       - docker run opendevsecops/cohesion scanner -v http://demo.testfire.net
+    - stage: scan php.testsparker.com
+      script:
+      - docker run opendevsecops/cohesion scanner -v http://php.testsparker.com
+    - stage: scan testphp.vulnweb.com
+      script:
+      - docker run opendevsecops/cohesion scanner -v http://testphp.vulnweb.com
+    - stage: scan webscantest.com
+      script:
+      - docker run opendevsecops/cohesion scanner -v http://webscantest.com
