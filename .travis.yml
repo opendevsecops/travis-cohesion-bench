@@ -1,0 +1,8 @@
+sudo: true
+dist: trusty
+
+jobs:
+  include:
+    - stage: scan demo.testfire.net
+      script:
+      - docker run opendevsecops/cohesion scanner -v http://demo.testfire.net
