@@ -1,17 +1,19 @@
 sudo: true
 dist: trusty
-
 jobs:
   include:
-    - stage: scan demo.testfire.net
-      script:
-      - docker run opendevsecops/cohesion scanner -v http://demo.testfire.net
-    - stage: scan php.testsparker.com
-      script:
-      - docker run opendevsecops/cohesion scanner -v http://php.testsparker.com
-    - stage: scan testphp.vulnweb.com
-      script:
-      - docker run opendevsecops/cohesion scanner -v http://testphp.vulnweb.com
-    - stage: scan webscantest.com
-      script:
-      - docker run opendevsecops/cohesion scanner -v http://webscantest.com
+  - stage: scan demo.testfire.net
+    script:
+    - docker run opendevsecops/cohesion scanner -v http://demo.testfire.net
+  - stage: scan php.testsparker.com
+    script:
+    - docker run opendevsecops/cohesion scanner -v http://php.testsparker.com
+  - stage: scan testphp.vulnweb.com
+    script:
+    - docker run opendevsecops/cohesion scanner -v http://testphp.vulnweb.com
+  - stage: scan webscantest.com
+    script:
+    - docker run opendevsecops/cohesion scanner -v http://webscantest.com
+notifications:
+  slack:
+    secure: f526P0Cti+NjdoZ1HGhkJAou/n9o7AzwhmvlVYzKyNm78ol1tJ5dn1yPTVde4zFgHJwIyLcE1+liJnHhcMAJS1YvIIcXILNoHV06a3OlGn8iDzX5T7nXZHs65+lS8IA5VaOEUzGxSYTJhI8xp+cYldk5MUa0MaM6lXOb96W+jv4B24nFnk8wAFEIdRWI30MEBxBrmnA/iujQubbHcG+InR2kohePMzSLNoV0KIz6uaVs8RA3ywGOVZqarNFCZGlMQgvJ/0bW+v9KcZCQkTWQl3ki8CPvN0ehrJkpvWAwSB2VPRyevI94CydSdyc0LFex6IGkzONN32apHeJE7jhY1JjCR+QSrVlL8K3vwqlBHogtnb1slyaNixADyctrsiZXb922Hsy4DyvWxDLj+GDGsE/twkntrfoQFrBhktxXcL3Ftua5d0VO3aamQ9JP3NlY+4WnRvhGQl5dzAfClpDi2lw+eunBS3YVAeq8WQeH5OBPSoXVWFdOqPU8Ho3Qx+1xH9sOTLstzFfGoUXBccFC//rGDMCOg6Pqnav9bdK9UVxcQQakjGyrVFBDxTK/OJYtDQg1ZNkeca3S/Up7wMwagR1ZCeAXGztMQTbRpMJIxBjzIpT9KQbBv0yA+6Dt+jsK22KGCeaydGW0Vb8wlRgzo9B9Gz+NTpdWlElN+WkNaEM=
