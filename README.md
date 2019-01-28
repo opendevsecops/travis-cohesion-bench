@@ -1,5 +1,6 @@
 [![Follow on Twitter](https://img.shields.io/twitter/follow/opendevsecops.svg?logo=twitter)](https://twitter.com/opendevsecops)
 [![Travis CI](https://travis-ci.org/opendevsecops/travis-cohesion-bench.svg?branch=master)](https://travis-ci.org/opendevsecops/travis-cohesion-bench)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c004f7f451814257bd146036d26795b1)](https://www.codacy.com/app/OpenDevSecOps/travis-cohesion-bench?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=opendevsecops/travis-cohesion-bench&amp;utm_campaign=Badge_Grade)
 
 # Travis Cohesion Bench
 
